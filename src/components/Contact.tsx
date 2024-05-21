@@ -144,7 +144,7 @@ function Contact() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-[#1A1A1A] dark:text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
@@ -155,24 +155,25 @@ function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your mail address?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-[#1A1A1A] dark:text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-1">Your Message</span>
               <textarea
-                rows={7}
+                rows={5}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What do you want to say?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-[#1A1A1A] dark:text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
 
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              className="bg-tertiary border-2 border-slate-600 p-3 px-8 rounded-xl outline-none w-fit text-[#1A1A1A] dark:text-white font-bold shadow-md shadow-primary"
+              disabled={loading}
             >
               {loading ? "Sending..." : "Send"}
             </button>
