@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Hero from "./components/Hero";
+import BackGround from "./assets/hero.svg";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import { useEffect } from "react";
+import Certificates from "./components/Certificates";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // To scroll to the specific section
+  const sec = window.location.hash;
+  useEffect(() => {
+    if (sec) {
+      const element = document.querySelector(sec);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [sec]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <main>
+      <img
+        src={BackGround}
+        className="h-screen w-screen object-cover absolute top-0 left-0 z-0 hero-image"
+      />
+      <section className="h-screen w-screen overflow-y-scroll absolute top-0 left-0 z-1 snap-y snap-mandatory snap-always">
+        <Hero />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Certificates />
+        <Contact />
+      </section>
+    </main>
+  );
 }
 
-export default App
+export default App;
