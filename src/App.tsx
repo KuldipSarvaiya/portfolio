@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import { useEffect } from "react";
 import Certificates from "./components/Certificates";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   // To scroll to the specific section
@@ -33,7 +34,8 @@ function App() {
         <Experience />
         <Projects />
         <Education />
-        <Certificates />
+        <Testimonial />
+        {/* <Certificates /> */}
         <Contact />
       </section>
     </main>
