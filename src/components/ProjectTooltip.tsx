@@ -23,7 +23,7 @@ function ProjectTooltip({
       }}
     >
       {children}
-      {show && <ImageFadeCarousel images={images} speed={2000} />}
+      {show && <ImageFadeCarousel position="-translate-y-full" images={images} speed={2000} />}
     </div>
   );
 }
