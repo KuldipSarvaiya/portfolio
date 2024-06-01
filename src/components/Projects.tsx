@@ -12,6 +12,7 @@ const myProjects: myProjectsT[] = [
       "/projects/easeerpsolutions/5.png",
       "/projects/easeerpsolutions/6.png",
       "/projects/easeerpsolutions/7.png",
+      "/projects/easeerpsolutions/8.png",
     ],
     name: "Ease ERP Solutions",
     github: "https://github.com/KuldipSarvaiya/ease-erp-solutions",

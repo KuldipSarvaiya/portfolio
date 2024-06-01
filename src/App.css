@@ -55,8 +55,78 @@ body {
 }
 
 .sec-title {
-  background: linear-gradient(20deg, white, rgb(189, 189, 189), white);
+  background: linear-gradient(20deg, white, rgb(171, 171, 171), white);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@keyframes slideInFromOutside {
+  0% {
+    transform: translate(-100dvh, -50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromOutside 1s ease-in forwards;
+}
+
+.scroll_indicator {
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  transform-origin: left;
+  width: 100%;
+  height: 5px;
+  background-color: #b2becd;
+  scale: 0 1;
+  animation: scrolling-div linear;
+  animation-timeline: scroll();
+  border-bottom-right-radius: 100%;
+}
+
+@keyframes scrolling-div {
+  to {
+    scale: 1 1;
+  }
+}
+
+.orange {
+  @apply hover:border-orange-500 hover:text-orange-500;
+}
+
+.spin {
+  animation: spin 1s both 0s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.not_found {
+  @apply flex flex-row justify-center items-start;
+  animation: travel 12s ease 0s infinite both;
+}
+
+@keyframes travel {
+  25% {
+    @apply justify-end items-center;
+  }
+  50% {
+    @apply justify-center items-end;
+  }
+  75% {
+    @apply justify-start items-center;
+  }
+   100%{
+    @apply justify-center items-start;
+   }
 }

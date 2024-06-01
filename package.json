@@ -14,13 +14,17 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.5",
+    "react-router-dom": "^6.23.1",
+    "react-syntax-highlighter": "^15.5.0",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "realm-web": "^2.0.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
