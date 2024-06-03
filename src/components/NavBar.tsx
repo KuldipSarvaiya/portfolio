@@ -18,15 +18,15 @@ const Menus = (prop: { isVerticle: Boolean }) => {
       <a href="#Projects" className="nav-link">
         Projects
       </a>
-      <a href="#Testimonial" className="nav-link">
+      {/* <a href="#Testimonial" className="nav-link">
         Testimonial
-      </a>
+      </a> */}
       <a href="#Education" className="nav-link">
         Education
       </a>
-      {/* <a href="#Certificates" className="nav-link">
+      <a href="#Certificates" className="nav-link">
       Certificates
-      </a> */}
+      </a>
       <a href="#Contact" className="nav-link">
         Contact
       </a>
