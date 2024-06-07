@@ -51,10 +51,10 @@ function Skills() {
                 src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
                 alt="CSS3"
               />
-              <img
+              {/* <img
                 src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"
                 alt="JQUERY"
-              />
+              /> */}
               <img
                 src="https://img.shields.io/badge/bootstrap-%2338B2AC.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
                 alt="BOOTSTRAP"
@@ -78,6 +78,14 @@ function Skills() {
               <img
                 src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
                 alt="NODEJS"
+              />
+              <img
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                alt="PYTHON"
+              />
+              <img
+                src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
+                alt="PHP"
               />
               <img
                 src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
@@ -152,10 +160,10 @@ function Skills() {
                 src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
                 alt="NEXTJS"
               />
-              <img
+              {/* <img
                 src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
                 alt="REACT-NATIVE"
-              />
+              /> */}
               <img
                 src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
                 alt="TAILWINDCSS"
