@@ -4,9 +4,21 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import azziptech from "../assets/azziptech.jpg";
+import tpots from "../assets/tpots.png";
 
 // list of my experience
 const experiences: experienceT[] = [
+  {
+    title: "Backend Developer",
+    company_name: "Technical Pots",
+    icon: tpots,
+    iconBg: "#ffffff",
+    date: "June 2024 - Present",
+    points: [
+      "Here at Technical Pots, I work on Backend position while working with good team creating meaningful products.",
+      "Everyday I work with backend Technologies like Nodejs, Python and PHP for creating highly scalable and fast servers."
+    ],
+  },
   {
     title: "Software Developer Intern",
     company_name: "Azziptech",
