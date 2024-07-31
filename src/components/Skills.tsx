@@ -84,12 +84,12 @@ function Skills() {
                 alt="PYTHON"
               />
               <img
-                src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white"
-                alt="PHP"
+                src="https://img.shields.io/badge/express-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+                alt="EXPRESSJS"
               />
               <img
-                src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-                alt="EXPRESSJS"
+                src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"
+                alt="NESTJS"
               />
               <img
                 src="https://img.shields.io/badge/restapi-%23E346.svg?style=for-the-badge&logo=axios&logoColor=white"
@@ -135,7 +135,6 @@ function Skills() {
                 src="https://img.shields.io/badge/oracle-%23E34F26.svg?style=for-the-badge&logo=oracle&logoColor=white"
                 alt="ORACLE"
               />
-              {/* <img src="" alt="" /> */}
             </div>
           </div>
         </Tilt>

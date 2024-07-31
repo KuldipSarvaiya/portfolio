@@ -43,9 +43,8 @@ function Hero() {
               full-stack software developer
             </span>
             🧑‍💻 enthusiast. I develop ATTRACTIVE and Blazingly FAST{" "}
-            <u className="text-nowrap">Web Applications</u> 
-            {/* as well as{" "}
-            <u className="text-nowrap">Cross-Platform Mobile Apps</u> */}
+            <u className="text-nowrap">Web Applications</u>{" "}
+            as well as <u className="text-nowrap">Cross-Platform Mobile Apps</u>
             . I'm a quick learner and collaborate closely with clients to create
             efficient, scalable, and user-friendly solutions that solve
             real-world problems. Let's work together to bring your ideas to

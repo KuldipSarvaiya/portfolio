@@ -9,14 +9,15 @@ import tpots from "../assets/tpots.png";
 // list of my experience
 const experiences: experienceT[] = [
   {
-    title: "Backend Developer",
+    title: "Fullstack SDE",
     company_name: "Technical Pots",
     icon: tpots,
     iconBg: "#ffffff",
     date: "June 2024 - Present",
+    website: "https://tpots.co/",
     points: [
-      "Here at Technical Pots, I work on Backend position while working with good team creating meaningful products.",
-      "Everyday I work with backend Technologies like Nodejs, Python and PHP for creating highly scalable and fast servers."
+      "Here at Technical Pots, as Fullstack software developer I work with motivated team to creat meaningful products.",
+      "Everyday I work with Technologies like Python, Nodejs and Reactjs with JS/TS to develop highly scalable and fast web servers and user interfaces.",
     ],
   },
   {
@@ -25,6 +26,7 @@ const experiences: experienceT[] = [
     icon: azziptech,
     iconBg: "#ffffff",
     date: "January 2024 - April 2024",
+    website: "https://www.azziptech.com/",
     points: [
       "During this three months internship i worked with web development projects and learnt many new concepts as well.",
       "I gained hands-on experience with web development technologies like React.js, Node.js and MySql etc.",
@@ -39,6 +41,7 @@ type experienceT = {
   icon: string;
   iconBg: string;
   date: string;
+  website: string;
   points: string[];
 };
 
@@ -53,7 +56,7 @@ const ExperienceCard = ({ experience }: { experience: experienceT }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <a href="https://www.azziptech.com/" target="_blank">
+        <a href={experience.website} target="_blank">
           <div className="flex justify-center items-center w-full h-full">
             <img
               src={experience.icon}
@@ -94,11 +97,7 @@ function Experience() {
       id="Experience"
       className="w-screen min-h-screen snap-start flex flex-col justify-center items-center pt-14 pb-10"
     >
-      <strong
-        className="w-full text-center text-4xl animate-bounce my-5"
-        // ! remove this style when second experience added
-        style={{ marginBottom: "80px" }}
-      >
+      <strong className="w-full text-center text-4xl animate-bounce my-5">
         <span className="sec-title italic">My Experiences</span>
       </strong>
       <VerticalTimeline>
