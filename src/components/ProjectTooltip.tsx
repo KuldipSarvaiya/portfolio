@@ -14,12 +14,12 @@ function ProjectTooltip({
       onMouseEnter={() => {
         setTimeout(() => {
           setShow(true);
-        }, 1000);
+        }, 2000);
       }}
       onMouseLeave={() => {
         setTimeout(() => {
           setShow(false);
-        }, 1000);
+        }, 2000);
       }}
     >
       {children}

@@ -9,7 +9,7 @@ import tpots from "../assets/tpots.png";
 // list of my experience
 const experiences: experienceT[] = [
   {
-    title: "Fullstack SDE",
+    title: "Fullstack SWE",
     company_name: "Technical Pots",
     icon: tpots,
     iconBg: "#ffffff",

@@ -135,6 +135,7 @@ function Contact() {
 
         {/* contact form */}
         <div className="flex-[0.75] bg-black-100 p-5 rounded-2xl blur-bg h-fit">
+          <center className="text-white">mailto: kuldipsarvaiya94@gmail.com</center>
           <form
             onSubmit={handleSubmit}
             className="mt-2 flex flex-col gap-5 min-h-fit"

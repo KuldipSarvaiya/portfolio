@@ -74,7 +74,7 @@ const myProjects: myProjectsT[] = [
       {
         name: "Reactjs",
         bgColor: "bg-blue-500/40",
-        link: "https://nextjs.org/",
+        link: "https://react.dev/",
       },
       {
         name: "NodeJS",
@@ -126,7 +126,7 @@ const myProjects: myProjectsT[] = [
       {
         name: "Reactjs",
         bgColor: "bg-blue-500/40",
-        link: "https://nextjs.org/",
+        link: "https://react.dev/",
       },
       {
         name: "NodeJS",

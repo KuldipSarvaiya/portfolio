@@ -50,8 +50,8 @@ function Hero() {
             real-world problems. Let's work together to bring your ideas to
             life!
             <br />
-            Download My{" "}
-            <a href="Resume.pdf" download={"Kuldip_sarvaiya_resume.pdf"}>
+            Check My{" "}
+            <a href={import.meta.env.VITE_APP_RESUME_LINK} target="_blank">
               Resume 📃
             </a>
           </p>

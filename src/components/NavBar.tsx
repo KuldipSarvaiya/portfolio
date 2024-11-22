@@ -1,8 +1,9 @@
 import menu from "../assets/menu.svg";
 import cancel from "../assets/cancel.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const Menus = (prop: { isVerticle: Boolean }) => {
+const Menus = (prop: { isVerticle: boolean }) => {
   return (
     <span
       className={`flex gap-3  ${
@@ -30,13 +31,14 @@ const Menus = (prop: { isVerticle: Boolean }) => {
       <a href="#Contact" className="nav-link">
         Contact
       </a>
-      <a
-        href="Resume.pdf"
+      {/* <a
+        href={import.meta.env.VITE_APP_RESUME_LINK}
         className="text-nowrap"
         download={"Kuldip_sarvaiya_resume.pdf"}
       >
         Resume📃
-      </a>
+      </a> */}
+      <Link to={"/blog"}>Blogs🏠</Link>
     </span>
   );
 };

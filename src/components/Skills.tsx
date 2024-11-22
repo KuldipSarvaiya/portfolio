@@ -88,10 +88,6 @@ function Skills() {
                 alt="EXPRESSJS"
               />
               <img
-                src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"
-                alt="NESTJS"
-              />
-              <img
                 src="https://img.shields.io/badge/restapi-%23E346.svg?style=for-the-badge&logo=axios&logoColor=white"
                 alt="RESTAPI"
               />
@@ -124,12 +120,16 @@ function Skills() {
                 alt="MONGODB"
               />
               <img
-                src="https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white"
-                alt="MYSQL"
-              />
-              <img
                 src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
                 alt="POSTGRESQL"
+              />
+              <img
+                src="https://img.shields.io/badge/redis-%EE0000.svg?style=for-the-badge&logo=redis&logoColor=white&color=EE0000"
+                alt="REDIS"
+              />
+              <img
+                src="https://img.shields.io/badge/mysql-%2300000f.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                alt="MYSQL"
               />
               <img
                 src="https://img.shields.io/badge/oracle-%23E34F26.svg?style=for-the-badge&logo=oracle&logoColor=white"
@@ -167,6 +167,10 @@ function Skills() {
                 src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
                 alt="TAILWINDCSS"
               />
+              <img
+                src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"
+                alt="NESTJS"
+              />
             </div>
           </div>
         </Tilt>
@@ -199,12 +203,14 @@ function Skills() {
                 src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
                 alt="AWS"
               />
-
               <img
                 src="https://img.shields.io/badge/GIT-%23E34F26.svg?style=for-the-badge&logo=git&logoColor=white"
                 alt="GIT"
               />
-              <img src="" alt="" />
+              <img
+                src="https://img.shields.io/badge/linux-%FCC624.svg?style=for-the-badge&logo=linux&logoColor=black&color=FCC624"
+                alt="LINUX"
+              />
             </div>
           </div>
         </Tilt>
