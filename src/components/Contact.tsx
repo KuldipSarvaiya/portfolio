@@ -80,7 +80,7 @@ function Contact() {
         {/* socila links */}
         <div className="flex flex-col max-xl:flex-row gap-x-10 gap-y-12 max-md:gap-y-5 self-center my-2 flex-wrap justify-center">
           <a
-            href="https://www.linkedin.com/in/kuldip-sarvaiya-2592a425b/"
+            href={import.meta.env.VITE_APP_LINKEDIN_LINK}
             target="_blank"
             className="text-white flex items-center gap-2 text-lg"
           >
@@ -90,10 +90,10 @@ function Contact() {
               height={30}
               className="bg-white rounded-md p-1"
             />
-            Kuldip Sarvaiya
+            Kuldip-Sarvaiya
           </a>
           <a
-            href="https://github.com/KuldipSarvaiya"
+            href={import.meta.env.VITE_APP_GITHUB_LINK}
             target="_blank"
             className="text-white flex items-center gap-2 text-lg"
           >
@@ -106,7 +106,7 @@ function Contact() {
             KuldipSarvaiya
           </a>
           <a
-            href="https://x.com/kd_sarvaiya_"
+            href={import.meta.env.VITE_APP_X_LINK}
             target="_blank"
             className="text-white flex items-center gap-2 text-lg"
           >
@@ -119,7 +119,7 @@ function Contact() {
             kd_sarvaiya_
           </a>
           <a
-            href="https://www.instagram.com/kd_sarvaiya_/"
+            href={import.meta.env.VITE_APP_INSTAGRAM_LINK}
             target="_blank"
             className="text-white flex items-center gap-2 text-lg"
           >
@@ -135,7 +135,7 @@ function Contact() {
 
         {/* contact form */}
         <div className="flex-[0.75] bg-black-100 p-5 rounded-2xl blur-bg h-fit">
-          <center className="text-white">mailto: kuldipsarvaiya94@gmail.com</center>
+          <center className="text-white">mailto: {import.meta.env.VITE_APP_MY_EMAIL}</center>
           <form
             onSubmit={handleSubmit}
             className="mt-2 flex flex-col gap-5 min-h-fit"
