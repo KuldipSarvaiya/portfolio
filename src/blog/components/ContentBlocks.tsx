@@ -4,30 +4,30 @@ import { atelierLakesideDark } from "react-syntax-highlighter/dist/esm/styles/hl
 export function Title1({ text }: { text: string }) {
   return (
     <p className=" capitalize w-full max-w-6xl mt-5 text-pretty max-md:text-sm text-2xl font-extrabold indent-0">
-      ⬜ {text} :
+      {text}
     </p>
   );
 }
 
 export function Title2({ text }: { text: string }) {
   return (
-    <p className=" capitalize w-full max-w-6xl mt-5 text-pretty max-md:text-sm text-xl font-bold">
-      ◻️ {text} :
+    <p className=" capitalize w-full max-w-6xl mt-5 text-pretty max-md:text-sm text-xl font-bold indent-0">
+      {text}
     </p>
   );
 }
 
 export function Title3({ text }: { text: string }) {
   return (
-    <p className=" capitalize w-full max-w-6xl mt-5 text-pretty max-md:text-xs text-lg font-bold">
-      ◽ {text} :
+    <p className=" capitalize w-full max-w-6xl mt-5 text-pretty max-md:text-xs text-lg font-bold indent-0">
+      {text}
     </p>
   );
 }
 
 export function Paragraph({ text }: { text: string }) {
   return (
-    <p className="w-full max-w-6xl mt-5 text-pretty max-md:text-xs">{text}</p>
+    <p className="w-full max-w-6xl mt-5 text-pretty max-md:text-xs indent-0">{text}</p>
   );
 }
 
