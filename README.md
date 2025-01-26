@@ -7,4 +7,4 @@
 - image
 - video
 - quote
-- code-<language>
+- code-(language)
