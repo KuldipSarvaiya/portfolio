@@ -9,15 +9,15 @@ import tpots from "../assets/tpots.png";
 // list of my experience
 const experiences: experienceT[] = [
   {
-    title: "Fullstack SWE",
+    title: "Software Engineer I",
     company_name: "Technical Pots",
     icon: tpots,
     iconBg: "#ffffff",
     date: "June 2024 - Present",
     website: "https://tpots.co/",
     points: [
-      "Here at Technical Pots, as Fullstack software developer I work with motivated team to creat meaningful products.",
-      "Everyday I work with Technologies like Python, Nodejs and Reactjs with JS/TS to develop highly scalable and fast web servers and user interfaces.",
+      "Here at Technical Pots, as Fullstack software Engineer I work with motivated team to creat meaningful products.",
+      "Everyday I work with Technologies like ReactJs, React-Native, and Nodejs to develop highly scalable and fast web servers and cross-platform user interfaces.",
     ],
   },
   {

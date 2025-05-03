@@ -27,7 +27,7 @@ function App() {
     <main>
       <img
         src={BackGround}
-        className="h-screen w-screen object-cover absolute top-0 left-0 z-0 hero-image"
+        className="h-screen w-screen full object-contain absolute top-0 left-0 z-0 hero-image"
       />
       <section className="h-screen w-screen overflow-y-scroll absolute top-0 left-0 z-1 snap-y snap-mandatory snap-always">
         <Hero />

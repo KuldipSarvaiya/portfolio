@@ -16,8 +16,7 @@ function Education() {
           AUGUST 2021 &nbsp;-&nbsp; MAY 2024
         </p>
         <p className="max-md:text-[15px]">
-          <a href="https://www.mkbhavuni.edu.in/mkbhavuniweb/" target="_blank" className="text-white">MKBU</a> &nbsp;||&nbsp; Shree Swaminarayan College of Computer Science,
-          Bhavnagar
+          <a href="https://www.mkbhavuni.edu.in/mkbhavuniweb/" target="_blank" className="text-white">Maharaja Krishnakumarsinhji Bhavnagar University, Bhavnagar</a>
         </p>
         <p className="">Obtained Grade : First Class ✨</p>
         <p className=" flex flex-row flex-wrap gap-1">

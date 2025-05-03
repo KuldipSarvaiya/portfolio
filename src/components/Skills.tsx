@@ -72,6 +72,42 @@ function Skills() {
           }}
         >
           <div className="blur-bg rounded-2xl h-full w-full p-2">
+            <h3 className="uppercase text-lg font-bold my-name">frameworks</h3>
+            <hr />
+            <div className="flex flex-row flex-wrap gap-y-3 gap-x-2 mt-5 justify-evenly">
+              <img
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                alt="REACTJS"
+              />
+              <img
+                src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
+                alt="NEXTJS"
+              />
+              <img
+                src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                alt="REACT-NATIVE"
+              />
+              <img
+                src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                alt="TAILWINDCSS"
+              />
+              <img
+                src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"
+                alt="NESTJS"
+              />
+            </div>
+          </div>
+        </Tilt>
+        <Tilt
+          options={option}
+          style={{
+            height: 200,
+            width: 350,
+            border: "2px solid white",
+            borderRadius: "15px",
+          }}
+        >
+          <div className="blur-bg rounded-2xl h-full w-full p-2">
             <h3 className="uppercase text-lg font-bold my-name">back End</h3>
             <hr />
             <div className="flex flex-row flex-wrap gap-y-3 gap-x-2 mt-5 justify-evenly">
@@ -134,42 +170,6 @@ function Skills() {
               <img
                 src="https://img.shields.io/badge/oracle-%23E34F26.svg?style=for-the-badge&logo=oracle&logoColor=white"
                 alt="ORACLE"
-              />
-            </div>
-          </div>
-        </Tilt>
-        <Tilt
-          options={option}
-          style={{
-            height: 200,
-            width: 350,
-            border: "2px solid white",
-            borderRadius: "15px",
-          }}
-        >
-          <div className="blur-bg rounded-2xl h-full w-full p-2">
-            <h3 className="uppercase text-lg font-bold my-name">frameworks</h3>
-            <hr />
-            <div className="flex flex-row flex-wrap gap-y-3 gap-x-2 mt-5 justify-evenly">
-              <img
-                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-                alt="REACTJS"
-              />
-              <img
-                src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
-                alt="NEXTJS"
-              />
-              {/* <img
-                src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-                alt="REACT-NATIVE"
-              /> */}
-              <img
-                src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-                alt="TAILWINDCSS"
-              />
-              <img
-                src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"
-                alt="NESTJS"
               />
             </div>
           </div>

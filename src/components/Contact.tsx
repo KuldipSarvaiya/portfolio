@@ -9,6 +9,7 @@ function Contact() {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (
     e:
@@ -27,9 +28,10 @@ function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if(!form.email || !form.message || !form.name) return alert("Please Fill out Informaation Correctly.")
+    if (!form.email || !form.message || !form.name) return alert("Please Fill out Informaation Correctly.")
 
     setLoading(true);
+    if (error) setError('');
 
     emailjs
       .send(
@@ -57,9 +59,8 @@ function Contact() {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
 
-          alert("⚠️ Something went wrong. Please try again.");
+          setError("⚠️ Email Limit Exceeded. Please try again after some time.");
         }
       );
   };
@@ -150,7 +151,7 @@ function Contact() {
                 required
                 placeholder="What's your good name?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-[#1A1A1A] dark:text-white rounded-lg outline-none border-none font-medium"
-                />
+              />
             </label>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-1">Your email</span>
@@ -162,7 +163,7 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="What's your mail address?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-[#1A1A1A] dark:text-white rounded-lg outline-none border-none font-medium"
-                />
+              />
             </label>
             <label className="flex flex-col">
               <span className="text-white font-medium mb-1">Your Message</span>
@@ -176,6 +177,8 @@ function Contact() {
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-[#1A1A1A] dark:text-white rounded-lg outline-none border-none font-medium"
               />
             </label>
+
+            {error && <span className="text-red-500">{error}</span>}
 
             <button
               type="submit"
