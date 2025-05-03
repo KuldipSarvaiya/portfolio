@@ -57,7 +57,7 @@ function Contact() {
             message: "",
           });
         },
-        (error) => {
+        (_) => {
           setLoading(false);
 
           setError("⚠️ Email Limit Exceeded. Please try again after some time.");
