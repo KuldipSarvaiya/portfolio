@@ -16,7 +16,7 @@ const myProjects: myProjectsT[] = [
     ],
     name: "Ease ERP Solutions",
     github: "https://github.com/KuldipSarvaiya/ease-erp-solutions",
-    livelink: "",
+    livelink: "https://ease-erp-solutions.vercel.app",
     tech: [
       { name: "Nextjs", bgColor: "bg-black/50", link: "https://nextjs.org/" },
       {
