@@ -16,7 +16,8 @@ const myProjects: myProjectsT[] = [
     ],
     name: "Ease ERP Solutions",
     github: "https://github.com/KuldipSarvaiya/ease-erp-solutions",
-    livelink: "https://ease-erp-solutions.vercel.app",
+    // livelink: "https://ease-erp-solutions.vercel.app",
+    livelink: "",
     tech: [
       { name: "Nextjs", bgColor: "bg-black/50", link: "https://nextjs.org/" },
       {
@@ -52,6 +53,45 @@ const myProjects: myProjectsT[] = [
     ],
     description:
       "This is Enterprise Resource Planning software. It utilizes the power of Nextjs14 using route.js file while maintaning fast performance and accessibility. This web app is highly scalable as it is Dockerized. This includes modules such as attendance, payroll, inventory, Ecommerce, CRM, etc. It includes dashboards for employees, administrators, human resources, finance, inventory, and general departments. Customers are verified via Google with next-auth.",
+  },
+  {
+    name: 'Real Estate App',
+    images: [
+      "/projects/realestate/1.png",
+      "/projects/realestate/2.png",
+      "/projects/realestate/3.png",
+      "/projects/realestate/4.png"
+    ],
+    github: "https://github.com/KuldipSarvaiya/real-estate",
+    livelink: "",
+    tech: [
+      {
+        name: "ReactNative",
+        bgColor: "bg-[#3b82f6]/50",
+        link: "https://reactnative.dev/",
+      },
+      {
+        name: "Expo",
+        bgColor: "bg-black/50",
+        link: "https://expo.dev/"
+      },
+      {
+        name: "Appwrite",
+        bgColor: "bg-[#f02e65]/50",
+        link: "https://appwrite.io/",
+      },
+      {
+        name: "TypeScript",
+        bgColor: "bg-[#3178c6]/50",
+        link: "https://www.typescriptlang.org/",
+      },
+      {
+        name: "TailwindCSS",
+        bgColor: "bg-[#38bdf8]/50",
+        link: "https://tailwindcss.com/",
+      },
+    ],
+    description: "A sophisticated mobile application built with React Native and Expo framework, offering a seamless real estate property browsing experience. The app features secure Google Authentication, allowing users to explore detailed property listings, perform advanced searches with filtering options, and manage their profiles. Users can read see property reviews, making informed decisions about their investments. Built with TypeScript for enhanced code reliability and styled with TailwindCSS for a modern, responsive interface. The backend is powered by Appwrite, ensuring robust data management and real-time updates.",
   },
   // dineflow
   {
