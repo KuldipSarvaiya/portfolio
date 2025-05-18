@@ -31,6 +31,46 @@ function Skills() {
             borderRadius: "15px",
           }}
         >
+          <div className="blur-bg rounded-2xl h-full w-full p-2">
+            <h3 className="uppercase text-lg font-bold my-name">back End</h3>
+            <hr />
+            <div className="flex flex-row flex-wrap gap-y-3 gap-x-2 mt-5 justify-evenly">
+              <img
+                src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+                alt="NODEJS"
+              />
+              <img
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                alt="PYTHON"
+              />
+              <img
+                src="https://img.shields.io/badge/express-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+                alt="EXPRESSJS"
+              />
+              <img
+                src="https://img.shields.io/badge/restapi-%23E346.svg?style=for-the-badge&logo=axios&logoColor=white"
+                alt="RESTAPI"
+              />
+              <img
+                src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
+                alt="GRAPHQL"
+              />
+              <img
+                src="https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101"
+                alt="SOCKET.IO"
+              />
+            </div>
+          </div>
+        </Tilt>
+        <Tilt
+          options={option}
+          style={{
+            height: 200,
+            width: 350,
+            border: "2px solid white",
+            borderRadius: "15px",
+          }}
+        >
           <div className="blur-bg rounded-2xl h-full w-full p-2 ">
             <h3 className="uppercase text-lg font-bold my-name">Front End</h3>
             <hr />
@@ -84,56 +124,16 @@ function Skills() {
                 alt="NEXTJS"
               />
               <img
-                src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-                alt="REACT-NATIVE"
-              />
-              <img
-                src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
-                alt="TAILWINDCSS"
-              />
-              <img
                 src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"
                 alt="NESTJS"
               />
-            </div>
-          </div>
-        </Tilt>
-        <Tilt
-          options={option}
-          style={{
-            height: 200,
-            width: 350,
-            border: "2px solid white",
-            borderRadius: "15px",
-          }}
-        >
-          <div className="blur-bg rounded-2xl h-full w-full p-2">
-            <h3 className="uppercase text-lg font-bold my-name">back End</h3>
-            <hr />
-            <div className="flex flex-row flex-wrap gap-y-3 gap-x-2 mt-5 justify-evenly">
+              {/* <img
+                src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                alt="REACT-NATIVE"
+              /> */}
               <img
-                src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-                alt="NODEJS"
-              />
-              <img
-                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-                alt="PYTHON"
-              />
-              <img
-                src="https://img.shields.io/badge/express-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-                alt="EXPRESSJS"
-              />
-              <img
-                src="https://img.shields.io/badge/restapi-%23E346.svg?style=for-the-badge&logo=axios&logoColor=white"
-                alt="RESTAPI"
-              />
-              <img
-                src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white"
-                alt="GRAPHQL"
-              />
-              <img
-                src="https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101"
-                alt="SOCKET.IO"
+                src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                alt="TAILWINDCSS"
               />
             </div>
           </div>

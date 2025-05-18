@@ -16,8 +16,8 @@ const experiences: experienceT[] = [
     date: "June 2024 - Present",
     website: "https://tpots.co/",
     points: [
-      "Here at Technical Pots, as Fullstack software Engineer I work with motivated team to creat meaningful products.",
-      "Everyday I work with Technologies like ReactJs, React-Native, and Nodejs to develop highly scalable and fast web servers and cross-platform user interfaces.",
+      "Here at Technical Pots, as Fullstack software Engineer I work with motivated team to creat meaningful products used by thousands of people globaly.",
+      "Everyday I work with Technologies like Node.js, React.js, Nextjs, and python to develop highly scalable and fast backend servers and web applications.",
     ],
   },
   {

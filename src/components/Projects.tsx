@@ -1,7 +1,51 @@
 import github from "../assets/github.svg";
-import ProjectTooltip from "./ProjectTooltip";
+import { useState, useEffect } from 'react';
 
 const myProjects: myProjectsT[] = [
+    {
+    images: [
+      "/projects/chatinger/1.png",
+      "/projects/chatinger/2.jpeg",
+      "/projects/chatinger/3.jpeg",
+      "/projects/chatinger/4.jpeg",
+      "/projects/chatinger/5.png",
+      "/projects/chatinger/6.jpeg",
+      "/projects/chatinger/7.png",
+      "/projects/chatinger/8.jpeg",
+    ],
+    name: "Chatinger",
+    github: "https://github.com/search?q=owner%3AKuldipSarvaiya+chatinger&type=repositories",
+    livelink: "",
+    tech: [
+      {
+        name: "NodeJS",
+        bgColor: "bg-[#16a34a]/50",
+        link: "https://nodejs.org/",
+      },
+      {
+        name: "Reactjs",
+        bgColor: "bg-blue-500/40",
+        link: "https://react.dev/",
+      },
+      {
+        name: "MongoDB",
+        bgColor: "bg-[#10b981]/50",
+        link: "https://www.mongodb.com/",
+      },
+      {
+        name: "TailwindCSS",
+        bgColor: "bg-[#38bdf8]/50",
+        link: "https://tailwindcss.com/",
+      },
+      {
+        name: "JavaScript",
+        bgColor: "bg-[#eab308]/50",
+        link: "https://developer.mozilla.org/en-US/docs/Web/javascript",
+      },
+    ],
+    description:
+      "Chatinger, a secure chat and video calling platform prioritizing user privacy by not requiring personal data even not email. Real-time communication powered by Socket.IO through group and single chats, along with 'Ghost Mode' for ephemeral chating. Experience crystal-clear one-on-one and group video calls powered by WebRTC, and even connect with new people via random video chats with the option to add them as friends. Built with Reactjs and Nodejs, utilizing MongoDB, Chatinger is architected with privacy in mind, and end-to-end encryption is underway to further enhance security.",
+  },
   // ease-erp-solutions
   {
     images: [
@@ -16,7 +60,7 @@ const myProjects: myProjectsT[] = [
     ],
     name: "Ease ERP Solutions",
     github: "https://github.com/KuldipSarvaiya/ease-erp-solutions",
-    livelink: "https://ease-erp-solutions.vercel.app",
+    livelink: "",
     tech: [
       { name: "Nextjs", bgColor: "bg-black/50", link: "https://nextjs.org/" },
       {
@@ -178,6 +222,29 @@ type myProjectsT = {
 };
 
 function Projects() {
+  const [currentImageIndexes, setCurrentImageIndexes] = useState<{ [key: string]: number }>({});
+
+  useEffect(() => {
+    // Initialize image indexes
+    const indexes = myProjects.reduce((acc, project) => {
+      acc[project.name] = 0;
+      return acc;
+    }, {} as { [key: string]: number });
+    setCurrentImageIndexes(indexes);
+
+    // Set up image rotation intervals
+    const intervals = myProjects.map(project => 
+      setInterval(() => {
+        setCurrentImageIndexes(prev => ({
+          ...prev,
+          [project.name]: (prev[project.name] + 1) % project.images.length
+        }));
+      }, 3000) // Change image every 3 seconds
+    );
+
+    return () => intervals.forEach(interval => clearInterval(interval));
+  }, []);
+
   return (
     <section
       id="Projects"
@@ -186,53 +253,71 @@ function Projects() {
       <strong className="w-full text-center text-4xl animate-bounce mb-5">
         <span className="sec-title italic">My Projects</span>
       </strong>
-      <div className="max-w-screen-2xl px-2 flex flex-row flex-wrap gap-5 justify-evenly">
+      <div className="max-w-screen-2xl px-2 flex flex-col gap-5">
         {(myProjects as myProjectsT[]).map((project, index) => (
           <div
-            className="flex flex-row flex-wrap gap-2 blur-bg border-2 rounded-lg p-2"
+            className="flex flex-col md:flex-row blur-bg border-2 rounded-lg p-4 gap-4 min-h-[245px]"
             key={index}
           >
-            <ProjectTooltip
-              images={project.images}
-              children={
-                <div className="min-w-[350px] max-w-lg h-full">
-                  <p className="my-name flex flex-row flex-nowrap justify-end gap-2 text-lg font-bold items-center">
-                    <span className="flex-1">{project.name}</span>
-                    {project.livelink && (
-                      <a
-                        href={project.livelink}
-                        className="text-emerald-500 underline"
-                      >
-                        Live↗️
-                      </a>
-                    )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      className="bg-white p-1 rounded-full"
-                      title="Project Github Link"
-                    >
-                      <img src={github} height={"20px"} width={"20px"} />
-                    </a>
-                  </p>
-                  <hr className="my-1" />
-                  <div className="flex flex-row flex-wrap gap-2">
-                    {project.tech.map((tech, i) => (
-                      <a
-                        key={i}
-                        href={tech.link}
-                        className={`p-[2px] rounded-md text-white ${tech.bgColor}`}
-                      >
-                        #{tech.name}
-                      </a>
-                    ))}
-                  </div>
-                  <p className="text-balance text-sm mt-3">
-                    {project.description}
-                  </p>
-                </div>
-              }
-            />
+            {/* Text Content */}
+            <div className="flex-1 min-w-[350px] max-w-2xl">
+              <p className="my-name flex flex-row flex-nowrap justify-end gap-2 text-lg font-bold items-center">
+                <span className="flex-1">{project.name}</span>
+                {project.livelink && (
+                  <a href={project.livelink} className="text-emerald-500 underline">
+                    Live↗️
+                  </a>
+                )}
+                <a
+                  href={project.github}
+                  target="_blank"
+                  className="bg-white p-1 rounded-full"
+                  title="Project Github Link"
+                >
+                  <img src={github} height={"20px"} width={"20px"} />
+                </a>
+              </p>
+              <hr className="my-1" />
+              <div className="flex flex-row flex-wrap gap-2">
+                {project.tech.map((tech, i) => (
+                  <a
+                    key={i}
+                    href={tech.link}
+                    className={`p-[2px] rounded-md text-white ${tech.bgColor}`}
+                  >
+                    #{tech.name}
+                  </a>
+                ))}
+              </div>
+              <p className="text-balance text-sm mt-3">
+                {project.description}
+              </p>
+            </div>
+
+            {/* Image Preview */}
+            <div className="w-full md:w-[400px] rounded-lg overflow-hidden">
+              <img 
+                src={project.images[currentImageIndexes[project.name] || 0]} 
+                alt={`${project.name} preview ${currentImageIndexes[project.name] + 1}`}
+                className="w-full object-contain hover:scale-105 transition-transform duration-500"
+              />
+              {/* <div className="flex justify-center gap-1 mt-2">
+                {project.images.map((_, imgIndex) => (
+                  <button
+                    key={imgIndex}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      imgIndex === currentImageIndexes[project.name] 
+                        ? 'bg-white' 
+                        : 'bg-gray-500'
+                    }`}
+                    onClick={() => setCurrentImageIndexes(prev => ({
+                      ...prev,
+                      [project.name]: imgIndex
+                    }))}
+                  />
+                ))}
+              </div> */}
+            </div>
           </div>
         ))}
       </div>

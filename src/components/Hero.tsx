@@ -22,7 +22,7 @@ function Hero() {
                 </sup>
                 , I'm
               </span>
-              <span className="my-name w-fit text-nowrap overflow-visible font-extrabold text-4xl md:text-6xl lg:text-7xl block">
+              <div className="my-name w-fit text-nowrap overflow-visible font-extrabold text-4xl md:text-6xl lg:text-7xl block">
                 <Typewriter
                   options={{
                     autoStart: true,
@@ -39,15 +39,16 @@ function Hero() {
                       .start();
                   }}
                 />
-              </span>
-              <p className="text-base md:text-lg lg:text-xl font-medium mt-4 max-w-3xl break-words">
+              </div>
+              <p className="text-base md:text-lg lg:text-xl font-medium mt-4 max-w-3xl text-pretty">
                 I'm a skilled and passionate{" "}
                 <span className="my-name inline-block">
-                  full-stack software developer
+                  full-stack software engineer
                 </span>
-                🧑‍💻 enthusiast. I develop ATTRACTIVE and Blazingly FAST{" "}
-                <u className="inline-block">Web Applications</u>{" "}
-                as well as <u className="inline-block">Cross-Platform Mobile Apps</u>.
+                🧑‍💻 enthusiast. I develop Attractive {" "}
+                <u className="inline-block">Web Applications</u> and Blazingly FAST{" "}
+                <u className="inline-block">Backend Servers</u>{" "}
+                using cutting-edge technologies like Node.js, React.js, and more.
                 <br />
                 Check My{" "}
                 <a href={import.meta.env.VITE_APP_RESUME_LINK} target="_blank">
