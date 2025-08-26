@@ -64,6 +64,8 @@ function Hero() {
               src={myPhoto}
               className="w-full md:w-[90%] max-md:h-[50%] max-sm:h-[100%] aspect-auto object-cover max-md:object-contain grayscale shadow-[inset_0_-20px_30px_-15px_rgba(0,0,0,0.3)]"
               alt="Profile Picture"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
         </div>
