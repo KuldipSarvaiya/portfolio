@@ -9,16 +9,15 @@ import tpots from "../assets/tpots.png";
 // list of my experience
 const experiences: experienceT[] = [
   {
-    title: "Software Engineer I",
+    title: "Software Engineer",
     company_name: "Technical Pots",
     icon: tpots,
     iconBg: "#ffffff",
-    date: "June 2024 - Present",
+    date: "June 2024 - December 2025",
     website: "https://tpots.co/",
     points: [
-      "Here at Technical Pots, as Fullstack software Engineer I work with motivated team to creat meaningful products used by thousands of people globaly.",
-      "Everyday I work with Technologies like Node.js, React.js, Nextjs, and python to develop highly scalable and fast backend servers and web applications.",
-    ],
+      "At Technical Pots, I engineer full-stack solutions as a Software Engineer, building products that scale to millions of users across nationwide platforms.",
+      "I work across the entire stack — from React and Next.js frontends to Node.js, NestJS, FastAPI backends and AI Agents — owning features end-to-end with a focus on performance and reliability.",    ],
   },
   {
     title: "Software Developer Intern",
