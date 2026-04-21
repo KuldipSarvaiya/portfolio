@@ -13,7 +13,7 @@ const experiences: experienceT[] = [
     company_name: "Technical Pots",
     icon: tpots,
     iconBg: "#ffffff",
-    date: "June 2024 - December 2025",
+    date: "June 2024 - November 2025",
     website: "https://tpots.co/",
     points: [
       "At Technical Pots, I engineer full-stack solutions as a Software Engineer, building products that scale to millions of users across nationwide platforms.",
