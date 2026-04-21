@@ -66,6 +66,7 @@ function Hero() {
               alt="Profile Picture"
               loading="eager"
               fetchPriority="high"
+              decoding="sync"
             />
           </div>
         </div>
