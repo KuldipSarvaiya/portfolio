@@ -8,7 +8,7 @@ function Education() {
         <span className="sec-title italic">My Education</span>
       </strong>
 
-      <div className="min-w-96 lg:min-w-[500px] blur-bg p-2 py-4 border-white rounded-lg border-2 flex flex-col gap-2">
+      <div className="min-w-96 lg:min-w-[500px] blur-bg p-2 py-4 border-white rounded-lg border-2 flex flex-col gap-2 max-sm:w-full">
         <p className="my-name text-xl font-extrabold text-balance max-md:text-[17px]">
           Masters of Computer Applications (AI/ML)
         </p>
@@ -32,7 +32,7 @@ function Education() {
         </p>
       </div>
 
-      <div className="min-w-96 lg:min-w-[500px] blur-bg p-2 py-4 border-white rounded-lg border-2 flex flex-col gap-2">
+      <div className="min-w-96 lg:min-w-[500px] blur-bg p-2 py-4 border-white rounded-lg border-2 flex flex-col gap-2  max-sm:w-full">
         <p className="my-name text-xl font-extrabold text-balance max-md:text-[17px]">
           Bachelor of Science in Information Technology
         </p>
