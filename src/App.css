@@ -130,3 +130,7 @@ body {
     @apply justify-center items-start;
    }
 }
+
+.style-wrapper-of-typewriter .Typewriter {
+  padding-top: 10px;
+}

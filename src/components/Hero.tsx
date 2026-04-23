@@ -10,7 +10,7 @@ function Hero() {
         {/* Main Container with responsive layout */}
         <div className="overflow-visible w-full h-full flex flex-col md:flex-row items-center md:items-center justify-center relative">
           {/* Text Content */}
-          <div className="flex flex-col w-full md:w-1/2 z-10 mt-8 md:mt-16 min-h-fit">
+          <div className="flex flex-col w-full md:w-1/2 z-10 mt-8 md:mt-16 min-h-fit max-sm:p-2">
             <div className="overflow-visible whitespace-normal">
               <span className="flex text-2xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
                 Hi{" "}
@@ -22,7 +22,7 @@ function Hero() {
                 </sup>
                 , I'm
               </span>
-              <div className="my-name w-fit text-nowrap overflow-visible font-extrabold text-4xl md:text-6xl lg:text-7xl block">
+              <div className="my-name w-fit text-nowrap overflow-visible font-extrabold text-4xl md:text-6xl lg:text-7xl block style-wrapper-of-typewriter">
                 <Typewriter
                   options={{
                     autoStart: true,
@@ -40,20 +40,10 @@ function Hero() {
                   }}
                 />
               </div>
-              <p className="text-base md:text-lg lg:text-xl font-medium mt-4 max-w-3xl text-pretty">
-                I'm a skilled and passionate{" "}
-                <span className="my-name inline-block">
-                  full-stack software engineer
-                </span>
-                🧑‍💻 enthusiast. I develop Attractive {" "}
-                <u className="inline-block">Web Applications</u> and Blazingly FAST{" "}
-                <u className="inline-block">Backend Servers</u>{" "}
-                using cutting-edge technologies like Node.js, React.js, and more.
+              <p className="text-base md:text-lg lg:text-xl font-medium mt-4 max-w-3xl text-balance">
+                A skilled and passionated <span className="my-name inline-block">full-stack software engineer</span>🧑‍💻 enthusiast. I engineer custom <u className="inline-block">AI Agents</u> with Multi-AI-Agent platforms, Blazingly FAST & Robust <u className="inline-block">Backend Servers</u> and Reliable <u className="inline-block">Web Applications</u> using cutting-edge technologies like Python, Node.js, React.js, and more.
                 <br />
-                Check My{" "}
-                <a href={import.meta.env.VITE_APP_RESUME_LINK} target="_blank">
-                  Resume 📃
-                </a>
+                Explore My <a href={import.meta.env.VITE_APP_RESUME_LINK} target="_blank">Resume 📃</a>
               </p>
             </div>
           </div>
