@@ -8,7 +8,7 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import { useEffect } from "react";
 import Certificates from "./components/Certificates";
-import SnackBar from "./components/SnackBar";
+// import SnackBar from "./components/SnackBar";
 // import Testimonial from "./components/Testimonial";
 
 function App() {
