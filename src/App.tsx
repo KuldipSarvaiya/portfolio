@@ -40,7 +40,7 @@ function App() {
         <Contact />
 
         {/* for redirecting to blog pages */}
-        <SnackBar />
+        {/* <SnackBar /> */}
       </section>
     </main>
   );

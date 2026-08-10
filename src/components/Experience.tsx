@@ -5,9 +5,35 @@ import {
 } from "react-vertical-timeline-component";
 import azziptech from "../assets/azziptech.jpg";
 import tpots from "../assets/tpots.png";
+import thecobuilders from "../assets/thecobuilders.png";
+import facematchstudio from "../assets/facematchstudio.png";
 
 // list of my experience
 const experiences: experienceT[] = [
+  {
+    title: "Solopreneur",
+    company_name: <span>Sarvaiya Labs | <a href="https://facematchstudio.in" target="_blank">FaceMatchStudio.in</a></span>,
+    icon: facematchstudio,
+    iconBg: "#ffffff",
+    date: "May 2026 - Present",
+    website: "https://facematchstudio.in",
+    points: [
+      "Building FaceMatch Studio as a Solopreneur, It's a IA based realtime image sharing platfom. As soon as image is captured on photogrraphe's camera it's uploaded and shared with the guests within seconds.",
+      "Guest takes selfie to quickly find their image using face recognition. It automatically applies logo, Preset (LUTs) and Compression.",
+    ],
+  },
+  {
+    title: "Agentic Software Engineer",
+    company_name: "The CoBuilders",
+    icon: thecobuilders,
+    iconBg: "#111111",
+    date: "December 2025 - Present",
+    website: "https://thecobuilders.com/",
+    points: [
+      "At The CoBuilders, I engineer reliable, scalable full-stack solutions for millions of users, integrating government contracts and driving growth through vital SEO and process optimizations.",
+      "I am developing a multi-AI agent platform tailored for blue-collar professionals, automating workflows such as lead generation, quoting, job analysis, scheduling, follow-ups, and material shopping.",
+    ],
+  },
   {
     title: "Software Engineer",
     company_name: "Technical Pots",
@@ -36,7 +62,7 @@ const experiences: experienceT[] = [
 
 type experienceT = {
   title: string;
-  company_name: string;
+  company_name: React.ReactNode;
   icon: string;
   iconBg: string;
   date: string;
@@ -59,7 +85,7 @@ const ExperienceCard = ({ experience }: { experience: experienceT }) => {
           <div className="flex justify-center items-center w-full h-full">
             <img
               src={experience.icon}
-              alt={experience.company_name}
+              alt={typeof experience.company_name === "string" ? experience.company_name : experience.title}
               className="w-[60%] h-[60%] object-contain"
             />
           </div>

@@ -1,7 +1,7 @@
 import menu from "../assets/menu.svg";
 import cancel from "../assets/cancel.svg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Menus = (prop: { isVerticle: boolean }) => {
   return (
@@ -38,7 +38,7 @@ const Menus = (prop: { isVerticle: boolean }) => {
       >
         Resume📃
       </a> */}
-      <Link to={"/blog"}>Blogs🏠</Link>
+      {/* <Link to={"/blog"}>Blogs🏠</Link> */}
     </span>
   );
 };
