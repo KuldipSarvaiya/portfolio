@@ -23,7 +23,7 @@ const experiences: experienceT[] = [
     ],
   },
   {
-    title: "Agentic Software Engineer",
+    title: "Agentic AI Software Engineer",
     company_name: "The CoBuilders",
     icon: thecobuilders,
     iconBg: "#111111",
@@ -43,7 +43,7 @@ const experiences: experienceT[] = [
     website: "https://tpots.co/",
     points: [
       "At Technical Pots, I engineer full-stack solutions as a Software Engineer, building products that scale to millions of users across nationwide platforms.",
-      "I work across the entire stack — from React and Next.js frontends to Node.js, NestJS, FastAPI backends and AI Agents — owning features end-to-end with a focus on performance and reliability.",    ],
+      "I work across the entire stack — from React and Next.js frontends to Node.js, NestJS, FastAPI backends and AI Agents — owning features end-to-end with a focus on performance and reliability.",],
   },
   {
     title: "Software Developer Intern",
